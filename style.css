@@ -140,6 +140,11 @@ h1{
 .up{
     cursor: pointer;
     width: 50px;
+    opacity: 15%;
+}
+
+.up:hover{
+    transform: scale(1.2);
     opacity: 25%;
 }
 
@@ -195,6 +200,11 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;  
+}
+
+.icon:hover{
+    opacity: 50%;
+    /* transform: scale(1.2); */
 }
 
 .icon>img{
