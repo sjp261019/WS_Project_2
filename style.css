@@ -6,11 +6,17 @@
     font-family: all-round-gothic, sans-serif;
     font-weight: 600;
     color: black; }
-
+body{ 
+    background-size: 40px 40px;
+    background-image:
+        linear-gradient(to right, rgb(244, 244, 244) 1px, transparent 1px),
+        linear-gradient(to bottom, rgb(244, 244, 244) 1px, transparent 1px); 
+    }
 a{  text-decoration: none; }
-
 h1{ font-size: 40px; }
-
+h4 { font-size: 36px; }
+p { font-weight: 300;
+    font-size: 22px; }
 .container{
     display: flex;
     align-items: center;
@@ -180,7 +186,7 @@ h1{ font-size: 40px; }
 /* WORK */
 .work{
     /* border: 3px solid; */
-    height: 200vh;
+    height: 210vh;
     width: 100%;
     
     display: grid;
@@ -201,6 +207,7 @@ h1{ font-size: 40px; }
 }
 #workTitle:hover{
     font-style: italic;
+    -webkit-text-fill-color: rgb(240, 240, 240);
 }
 
 .work1{
@@ -221,15 +228,14 @@ h1{ font-size: 40px; }
     height: 4vh;
     justify-content: center;
     align-items: center; 
-    margin-top: -12vh; 
+    margin-top: -2vh; 
     text-decoration: underline;
     font-size: 24px;
 }
 
-.more:hover{ opacity:50%; }
+.more:hover{ opacity: 50%; }
 
 .workItem{
-    /* border: 3px solid; */
     padding: 50px;
 
     cursor: pointer;
@@ -243,7 +249,7 @@ h1{ font-size: 40px; }
     transition: flex-grow .7s;
 }
 .workItem2{
-    /* border: 3px solid; */
+    border: 3px solid;
     padding: 50px;
 
     cursor: pointer;
@@ -260,6 +266,7 @@ h1{ font-size: 40px; }
 
 /* WORKITEM1 */
 #workItem1{
+    border: 3px solid;
     background-image: url("../img/workItem/lumina.jpg");
     background-size: cover;
     background-position: center;
@@ -272,16 +279,15 @@ h1{ font-size: 40px; }
 #workItem1 > h4{
     display: none;
     color: white;
-    font-size: 36px;
 }
 #workItem1 > h4 > p{
     color: white;
-    font-size: 22px;
     opacity: 75%;
-    margin-top: 5%;
+    margin-top: 10%;
 }
 /* WORKITEM2 */
 #workItem2{
+    border: 3px solid;
     background-image: url("../img/workItem/waves.jpg");
     background-size: cover;
     background-position: center;
@@ -294,17 +300,16 @@ h1{ font-size: 40px; }
 #workItem2 > h4{
     display: none;
     color: white;
-    font-size: 36px;
 }
 #workItem2 > h4 > p{
     color: white;
-    font-size: 22px;
     opacity: 75%;
-    margin-top: 5%;
+    margin-top: 10%;
 }
 
 /* WORKITEM3 */
 #workItem3{
+    border: 3px solid;
     background-image: url("../img/workItem/samsung.jpg");
     background-size: cover;
     background-position: center;
@@ -317,13 +322,48 @@ h1{ font-size: 40px; }
 #workItem3 > h4{
     display: none;
     color: white;
-    font-size: 36px;
 }
 #workItem3 > h4 > p{
     color: white;
-    font-size: 22px;
     opacity: 75%;
-    margin-top: 5%;
+    margin-top: 10%;
 }
 
+/* PASSION PROJECTS */
+.passion{
+    /* border: 3px solid; */
+    height: 100vh;
+}
 
+.passionTitle{
+    text-align: center;
+    padding: 50px 50px 0px 50px;
+}
+
+#passionTitle{
+    font-size: 80px;
+    -webkit-text-stroke: 3px;
+    -webkit-text-fill-color: white;
+}
+#passionTitle:hover{
+    font-style: italic;
+    -webkit-text-fill-color: rgb(240, 240, 240);
+}
+
+.passionItem{
+    justify-content: center;
+    align-items: center;
+}
+
+.slider{
+    background-color: blue;
+    width: 65%;
+    height: 70vh;
+    margin-top: 30px;
+}
+
+/* CONTACT */
+.contact{
+    border: 3px solid;
+    height: 100vh;
+}
