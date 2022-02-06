@@ -1,20 +1,15 @@
 /* BASIC SETTINGS */
-*{
-    margin: 0px;
+*{  margin: 0px;
     padding: 0px;
     box-sizing: border-box;   
-    scroll-behavior: smooth;  
-}
+    scroll-behavior: smooth; 
+    font-family: all-round-gothic, sans-serif;
+    font-weight: 600;
+    color: black; }
 
 a{  text-decoration: none; }
 
-h1{ 
-    font-family: all-round-gothic, sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 40px;
-    color: black;
-}
+h1{ font-size: 40px; }
 
 .container{
     display: flex;
@@ -24,15 +19,15 @@ h1{
 
 /* ANIMATIONS */
 @keyframes move {
-    0%{
-        transform: translateY(0px);
-    }
-    50%{
-        transform: translateY(20px);
-   }
-   100%{
-        transform: translateY(0px);
-   }
+    0%{ transform: translateY(0px); }
+    50%{ transform: translateY(20px); }
+    100%{ transform: translateY(0px); }
+}
+
+@keyframes size {
+    0%{ transform: scale(1); }
+    50%{ transform: scale(1.2); }
+    100%{ transform: scale(1); }
 }
 
 /* NAV BAR */
@@ -55,24 +50,13 @@ h1{
     align-items: center;  
     transition: flex-grow .7s;
 
-    font-family: all-round-gothic, sans-serif;
-    font-weight: 600;
-    font-style: normal;
     font-size: 20px;
-    color: black;
 }
+.navItem:hover{ opacity: 50%; }
 
-.navItem:hover{
-    opacity: 50%;
-}
+#about{ justify-content: left; }
 
-#about{
-    justify-content: left;
-}
-
-#menu{
-    justify-content: right;
-}
+#menu{ justify-content: right; }
 
 /* INTRO */
 .intro{
@@ -95,22 +79,20 @@ h1{
     transition: flex-grow .7s;
 }
 
-.color{
-    background-color: blue;
-    height: 200vh;
-}
-
 .sun{
     cursor: pointer;
     width: 50px;
-    margin-top: 10px;
-    margin-left: 25px;
-    margin-right: 10px;
-}
+    margin: 10px 10px 0px 25px;
 
-.sun:hover{
-    width: 60px;
+    /* animation-name: size;
+    animation-duration: 2s;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-play-state: running; */
 }
+.sun:hover{ width: 60px; }
 
 .arrow{
     cursor: pointer;
@@ -118,16 +100,13 @@ h1{
 
     animation-name: move;
     animation-duration: 2s;
+    animation-delay: 0;
     animation-timing-function: ease-in-out;
-    animation-delay: 0s;
     animation-iteration-count: infinite;
     animation-direction: normal;
     animation-play-state: running;
 }
-
-.arrow:hover{
-    opacity: 50%;
-}
+.arrow:hover{ opacity: 50%; }
 
 /* SCROLL UP */
 .bottom{
@@ -142,16 +121,13 @@ h1{
     width: 50px;
     opacity: 15%;
 }
-
 .up:hover{
     transform: scale(1.2);
     opacity: 25%;
 }
 
 /* OPEN MENU */
-.openMenu{
-    display: none;
-}
+.openMenu{ display: none; }
 
 .menu{
     z-index: 10;
@@ -171,16 +147,9 @@ h1{
 
 .menuItem{
     text-align: center;
-    font-family: all-round-gothic, sans-serif;
-    font-weight: 600;
-    font-style: normal;
     font-size: 20px;
-    color: black;
 }
-
-.menuItem:hover{
-    opacity: 50%;
-}
+.menuItem:hover{ opacity: 50%; }
 
 .icons{
     display: flex;
@@ -201,13 +170,160 @@ h1{
     justify-content: center;
     align-items: center;  
 }
+.icon:hover{ opacity: 50%; }
 
-.icon:hover{
-    opacity: 50%;
-    /* transform: scale(1.2); */
-}
-
-.icon>img{
+.icon > img{
     width: 35px;
     margin-right: 10px;
 }
+
+/* WORK */
+.work{
+    /* border: 3px solid; */
+    height: 200vh;
+    width: 100%;
+    
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-auto-rows: 100vh;
+    justify-content: center;
+}
+
+.workTitle{
+    width: 100px;
+    height: 200px;
+}
+
+#workTitle{
+    font-size: 150px;
+    -webkit-text-stroke: 3px;
+    -webkit-text-fill-color: white;
+}
+#workTitle:hover{
+    font-style: italic;
+}
+
+.work1{
+    width: 100%;
+    padding: 0px 0px 0px 50px;
+}
+.work2{
+    width: 100%;
+    padding: 0px 0px 0px 50px;
+    height: 80vh;
+}
+/* .work3{
+    width: 100%;
+    padding: 0px 0px 0px 50px;
+} */
+.work4{
+    width: 100%;
+    height: 4vh;
+    justify-content: center;
+    align-items: center; 
+    margin-top: -12vh; 
+    text-decoration: underline;
+    font-size: 24px;
+}
+
+.more:hover{ opacity:50%; }
+
+.workItem{
+    /* border: 3px solid; */
+    padding: 50px;
+
+    cursor: pointer;
+    height: 80vh;
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin-right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: flex-grow .7s;
+}
+.workItem2{
+    /* border: 3px solid; */
+    padding: 50px;
+
+    cursor: pointer;
+    height: 80vh;
+    flex-grow: 2;
+    flex-shrink: 1;
+    flex-basis: auto;
+    margin-right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    transition: flex-grow .7s;
+}
+
+/* WORKITEM1 */
+#workItem1{
+    background-image: url("../img/workItem/lumina.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+#workItem1:hover{
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url("../img/workItem/lumina.jpg");
+}
+#workItem1 > h4{
+    display: none;
+    color: white;
+    font-size: 36px;
+}
+#workItem1 > h4 > p{
+    color: white;
+    font-size: 22px;
+    opacity: 75%;
+    margin-top: 5%;
+}
+/* WORKITEM2 */
+#workItem2{
+    background-image: url("../img/workItem/waves.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+#workItem2:hover{
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url("../img/workItem/waves.jpg");
+}
+#workItem2 > h4{
+    display: none;
+    color: white;
+    font-size: 36px;
+}
+#workItem2 > h4 > p{
+    color: white;
+    font-size: 22px;
+    opacity: 75%;
+    margin-top: 5%;
+}
+
+/* WORKITEM3 */
+#workItem3{
+    background-image: url("../img/workItem/samsung.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+#workItem3:hover{
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url("../img/workItem/samsung.jpg");
+}
+#workItem3 > h4{
+    display: none;
+    color: white;
+    font-size: 36px;
+}
+#workItem3 > h4 > p{
+    color: white;
+    font-size: 22px;
+    opacity: 75%;
+    margin-top: 5%;
+}
+
+
