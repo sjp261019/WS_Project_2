@@ -267,14 +267,14 @@ p { font-weight: 300;
 /* WORKITEM1 */
 #workItem1{
     border: 3px solid;
-    background-image: url("../img/workItem/lumina.jpg");
+    background-image: url("img/workItem/lumina.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
 }
 #workItem1:hover{
-    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url("../img/workItem/lumina.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url("img/workItem/lumina.jpg");
 }
 #workItem1 > h4{
     display: none;
@@ -288,14 +288,14 @@ p { font-weight: 300;
 /* WORKITEM2 */
 #workItem2{
     border: 3px solid;
-    background-image: url("../img/workItem/waves.jpg");
+    background-image: url("img/workItem/waves.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
 }
 #workItem2:hover{
-    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url("../img/workItem/waves.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url("img/workItem/waves.jpg");
 }
 #workItem2 > h4{
     display: none;
@@ -310,14 +310,14 @@ p { font-weight: 300;
 /* WORKITEM3 */
 #workItem3{
     border: 3px solid;
-    background-image: url("../img/workItem/samsung.jpg");
+    background-image: url("img/workItem/samsung.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
 }
 #workItem3:hover{
-    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url("../img/workItem/samsung.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url("img/workItem/samsung.jpg");
 }
 #workItem3 > h4{
     display: none;
