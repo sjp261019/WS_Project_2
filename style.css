@@ -7,9 +7,12 @@
     font-weight: 600;
     color: black; }
 a{  text-decoration: none; }
+li{ list-style-type: none;}
 h1{ font-size: 40px; }
-h4 { font-size: 36px; }
-p { font-weight: 300;
+h4 {color: white; 
+    font-size: 36px; }
+p { color: white;
+    font-weight: 300;
     font-size: 22px; }
 .background{
     z-index: -5;
@@ -343,7 +346,6 @@ p { font-weight: 300;
     text-align: center;
     padding: 50px 50px 0px 50px;
 }
-
 #passionTitle{
     font-size: 80px;
     -webkit-text-stroke: 3px;
@@ -359,12 +361,62 @@ p { font-weight: 300;
     align-items: center;
 }
 
-.slider{
-    background-color: blue;
-    width: 65%;
-    height: 70vh;
-    margin-top: 30px;
+/* SLIDER */
+#slider{
+    border: 3px solid;
+    position: relative;
+    width: 960px;
+    height: 526.5px; 
+    margin-top: 50px;
+    overflow: hidden;
 }
+
+#slider li{ float: left; }
+#slider img{ width: 960px; }
+
+.sliderIcon{
+    cursor: pointer;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+.prev{
+    width: 50px;
+    transform: rotate(90deg);
+}
+.prev:hover{
+    transform: rotate(90deg) translateY(10px);
+    opacity: 50%;
+}
+.next{
+    width: 50px;
+    transform: rotate(-90deg);
+}
+.next:hover{
+    transform: rotate(-90deg) translateY(10px);
+    opacity: 50%;
+}
+
+.sliderTitle{
+    background-color: rgba(0,0,0,0.75);
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    opacity: 0%;
+
+    display: grid;
+    grid-template-columns: 100%;
+    grid-auto-rows: 100%;
+    justify-content: flex-start;
+}
+.sliderTitle:hover { opacity: 100%; }
+.sliderTitle > h4 > p{ margin-top: 2%; }
 
 /* CONTACT */
 .contact{
