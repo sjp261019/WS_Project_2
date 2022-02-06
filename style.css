@@ -6,17 +6,21 @@
     font-family: all-round-gothic, sans-serif;
     font-weight: 600;
     color: black; }
-body{ 
-    background-size: 40px 40px;
-    background-image:
-        linear-gradient(to right, rgb(244, 244, 244) 1px, transparent 1px),
-        linear-gradient(to bottom, rgb(244, 244, 244) 1px, transparent 1px); 
-    }
 a{  text-decoration: none; }
 h1{ font-size: 40px; }
 h4 { font-size: 36px; }
 p { font-weight: 300;
     font-size: 22px; }
+.background{
+    z-index: -5;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-size: 40px 40px;
+    background-image:
+        linear-gradient(to right, rgb(244, 244, 244) 1px, transparent 1px),
+        linear-gradient(to bottom, rgb(244, 244, 244) 1px, transparent 1px); 
+}
 .container{
     display: flex;
     align-items: center;

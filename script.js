@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    
+
     //MAKE ARRAY OF 1~13
     var sun = [];
     for(i=1; i<13; i++){
@@ -18,6 +18,13 @@ $(document).ready(function(){
         x = sun[count]
     // console.log(x);
     document.getElementById("sun").src=`img/sun/${x}.png`
+    });
+
+    // DRAG SUN
+    $(".sun").draggable({
+        stop: function(){
+            $(this).animate({top:0, left:0}, 1000, 'easeOutElastic');
+        }
     });
 
     var height;
