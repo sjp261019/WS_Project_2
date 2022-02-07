@@ -226,16 +226,12 @@ p { color: white;
     padding: 0px 0px 0px 50px;
     height: 80vh;
 }
-/* .work3{
-    width: 100%;
-    padding: 0px 0px 0px 50px;
-} */
-.work4{
+.work3{
     width: 100%;
     height: 4vh;
     justify-content: center;
     align-items: center; 
-    margin-top: -2vh; 
+    margin-top: 2vh; 
     text-decoration: underline;
     font-size: 24px;
 }
@@ -340,11 +336,17 @@ p { color: white;
 .passion{
     /* border: 3px solid; */
     height: 100vh;
+
+    display: grid;
+    grid-template-columns: 100%;
+    grid-auto-rows: 30%;
+    justify-content: flex-start;
 }
 
 .passionTitle{
     text-align: center;
-    padding: 50px 50px 0px 50px;
+    margin:auto;
+    /* padding: 5vh 5vh 0vh 5vh; */
 }
 #passionTitle{
     font-size: 80px;
@@ -357,6 +359,8 @@ p { color: white;
 }
 
 .passionItem{
+    width: 100%;
+    margin: auto;
     justify-content: center;
     align-items: center;
 }
@@ -367,7 +371,6 @@ p { color: white;
     position: relative;
     width: 960px;
     height: 526.5px; 
-    margin-top: 50px;
     overflow: hidden;
 }
 
@@ -420,6 +423,76 @@ p { color: white;
 
 /* CONTACT */
 .contact{
-    border: 3px solid;
-    height: 100vh;
+    /* border: 3px solid; */
+    height: 30vh;
+    display: grid;
+    justify-content: right;
+    text-align: right;
+    padding-right: 10vw;
+}
+.contactTitle{
+    width: 100%;
+    margin: auto;
+}
+#contactTitle{
+    width: 100%;
+    text-align: right;
+    font-size: 80px;
+    -webkit-text-stroke: 3px;
+    -webkit-text-fill-color: white;
+}
+#contactTitle:hover{
+    font-style: italic;
+    -webkit-text-fill-color: rgb(240, 240, 240);
+}
+.infoItem{
+    width: 100%;
+    font-size: 22px;
+    display: grid;
+    align-items: center;
+}
+.phone:hover{ opacity: 50%; text-decoration: underline; }
+.mail:hover{ opacity: 50%; text-decoration: underline; }
+
+/* FOOTER */
+footer{
+    display: block;
+    text-align: center;
+    height: 10vh;
+    margin-bottom: 2vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.info{
+    font-size: 18px;
+    color: gray;
+}
+
+/* MOBILE */
+@media screen and (max-width: 768px) {
+    h4{ font-size: 20px; }
+    p{ font-size: 16px; }
+
+    .work{
+        height: 105vh;
+        grid-auto-rows: 50vh;
+    }
+    #workTitle{ font-size: 70px; }
+    .work1{ height: 50vh; }
+    .work2{ height: 50vh; }
+    .workItem{ max-height: 40vh; }
+    .work3{
+        margin-top: 4vh; 
+        font-size: 18px;
+    }
+
+    #passionTitle{ font-size: 50px; }
+    .prev{ width: 30px; }
+    .next{ width: 30px; }
+    #slider{
+        width: 640px;
+        height: 351px; 
+    }
+    #slider img{ width: 640px; }
 }
