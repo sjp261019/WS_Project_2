@@ -98,7 +98,6 @@ $(document).ready(function(){
                 $("#slider ul").css({"margin":"0px"});
             });
         }, 4000);
-    }
-
+    }else { console.log("stop") }
 });   
 
