@@ -498,7 +498,10 @@ footer{
     .work{ height: 100vh; grid-auto-rows: 50vh; }
     #workTitle{ font-size: 70px; -webkit-text-stroke: 2px; }
     .work1{ height: 50vh; padding: 0px 0px 0px 25px; }
-    .work2{ height: 50vh; padding: 0px 0px 0px 25px; }
+    .work2{ height: 40vh; padding: 0px 0px 0px 25px; }
+    .work3{
+        font-size: 14px;
+    }
     .workItem{
         padding: 50px;
     
@@ -531,10 +534,6 @@ footer{
     #workItem1 { border: 2px solid; }
     #workItem2 { border: 2px solid; }
     #workItem3 { border: 2px solid; }
-    .work3{
-        margin-top: 2vh; 
-        font-size: 14px;
-    }
 
     #passionTitle{ font-size: 45px; -webkit-text-stroke: 2px; }
 
