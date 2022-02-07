@@ -52,6 +52,8 @@ $(document).ready(function(){
     $("#menu").click(function(){
         $(".openMenu").toggle("slow");
         $(".arrow").toggle("slow");
+        $(".sun").toggle("slow");
+        $(".profile").toggle("slow");
     })
 
     // ENLARGEN WORK CONTENT / SHOW TEXT ON HOVER
@@ -100,4 +102,5 @@ $(document).ready(function(){
         }, 4000);
     }else { console.log("stop") }
 });   
+
 
