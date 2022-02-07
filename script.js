@@ -89,5 +89,16 @@ $(document).ready(function(){
         $("#slider ul").animate({"margin-left":'0px'}, 1000, "swing");
     });
 
+    // SET SLIDER TO AUTO ON MOBILE
+    if($(window).width() <= 768){
+        setInterval(function(){
+            var imgWidth = $("#slider li img").width();
+            $("#slider ul").animate({"margin-left":-imgWidth}, 1000, "swing", function(){
+                $("#slider ul").find("li:first-child").insertAfter($("#slider ul").find("li:last-child"));
+                $("#slider ul").css({"margin":"0px"});
+            });
+        }, 4000);
+    }
+
 });   
 
