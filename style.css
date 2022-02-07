@@ -81,7 +81,7 @@ p { color: white;
 
 #about{ justify-content: left; }
 
-#menu{ justify-content: right; text-align: right; }
+#menu{ justify-content: right; text-align: right; float: right; }
 
 /* INTRO */
 .intro{
