@@ -39,6 +39,15 @@ $(document).ready(function(){
         scrollTo(0, 0);
     });
 
+    // CHANGE BG ON SCROLL
+    $(window).scroll(function() {
+        if($(this).scrollTop()>100){
+            $(".background").addClass("background2");
+        } else{
+            $(".background").removeClass("background2");
+        }
+    });
+
     //CLICK TO REVEAL MENU
     $("#menu").click(function(){
         $(".openMenu").toggle("slow");

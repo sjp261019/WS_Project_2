@@ -17,12 +17,24 @@ p { color: white;
 .background{
     z-index: -5;
     position: fixed;
+    background-color: white;
     width: 100vw;
     height: 100vh;
     background-size: 40px 40px;
     background-image:
         linear-gradient(to right, rgb(244, 244, 244) 1px, transparent 1px),
         linear-gradient(to bottom, rgb(244, 244, 244) 1px, transparent 1px); 
+}
+.background2{
+    z-index: -5;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-size: 40px 40px;
+    background-color:rgb(244, 244, 244);
+    background-image:
+        linear-gradient(to right, white 1px, transparent 1px),
+        linear-gradient(to bottom, white 1px, transparent 1px); 
 }
 .container{
     display: flex;
@@ -471,28 +483,65 @@ footer{
 
 /* MOBILE */
 @media screen and (max-width: 768px) {
+    h1{ font-size: 30px; }
     h4{ font-size: 20px; }
     p{ font-size: 16px; }
 
-    .work{
-        height: 105vh;
-        grid-auto-rows: 50vh;
+    .nav{ padding: 30px; }
+    .navItem{ font-size: 16px; }
+    .sun{ width: 35px; }
+    .sun:hover{ width: 40px; }
+    .arrow{ width: 35px; }
+    .up { width: 35px; }
+
+    .work{ height: 105vh; grid-auto-rows: 50vh; }
+    #workTitle{ font-size: 70px; -webkit-text-stroke: 2px; }
+    .work1{ height: 50vh; padding: 0px 0px 0px 25px; }
+    .work2{ height: 50vh; padding: 0px 0px 0px 25px; }
+    .workItem{
+        padding: 50px;
+    
+        cursor: pointer;
+        height: 40vh;
+        flex-grow: 1;
+        flex-shrink: 1;
+        margin-right: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: flex-grow .7s;
     }
-    #workTitle{ font-size: 70px; }
-    .work1{ height: 50vh; }
-    .work2{ height: 50vh; }
-    .workItem{ max-height: 40vh; }
-    .work3{
-        margin-top: 4vh; 
-        font-size: 18px;
+    .workItem2{
+        border: 3px solid;
+        padding: 50px;
+    
+        cursor: pointer;
+        height: 40vh;
+        flex-grow: 2;
+        flex-shrink: 1;
+        flex-basis: auto;
+        margin-right: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;   
+        transition: flex-grow .7s;
     }
 
-    #passionTitle{ font-size: 50px; }
+    #workItem1 { border: 2px solid; }
+    #workItem2 { border: 2px solid; }
+    #workItem3 { border: 2px solid; }
+    .work3{
+        margin-top: 2vh; 
+        font-size: 14px;
+    }
+
+    #passionTitle{ font-size: 45px; -webkit-text-stroke: 2px; }
     .prev{ width: 30px; }
     .next{ width: 30px; }
     #slider{
         width: 640px;
-        height: 351px; 
+        height: 351px;
+        border: 2px solid; 
     }
     #slider img{ width: 640px; }
 }
