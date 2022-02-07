@@ -535,13 +535,25 @@ footer{
         font-size: 14px;
     }
 
+    .passion { height: 80vh; }
     #passionTitle{ font-size: 45px; -webkit-text-stroke: 2px; }
+
+    .sliderIcon{ width: 1%; }
     .prev{ width: 30px; }
     .next{ width: 30px; }
+
     #slider{
         width: 640px;
         height: 351px;
         border: 2px solid; 
     }
     #slider img{ width: 640px; }
+
+
+    #contactTitle{ font-size: 35px; -webkit-text-stroke: 2px; }
+    #contactTitle:hover{ -webkit-text-stroke: 2px; }
+
+    .infoItem{ font-size: 14px; }
+
+    .info{ font-size: 12px; }
 }
