@@ -49,12 +49,20 @@ $(document).ready(function(){
     });
 
     //CLICK TO REVEAL MENU
+    var clicks = 0;
     $("#menu").click(function(){
+        clicks += 1;
         $(".openMenu").toggle("slow");
-        $(".arrow").toggle("slow");
-        $(".sun").toggle("slow");
-        $(".profile").toggle("slow");
-    })
+        if(clicks%2 == 1){
+            $(".sun").animate({opacity:0}, "slow");
+            $(".arrow").animate({opacity:0}, "slow");
+            $(".profile").animate({opacity:0}, "slow");
+        } else {
+            $(".sun").animate({opacity:100}, "slow");
+            $(".arrow").animate({opacity:100}, "slow");
+            $(".profile").animate({opacity:100}, "slow");
+        };
+    });
 
     // ENLARGEN WORK CONTENT / SHOW TEXT ON HOVER
     $(".work1").children("#workItem1").hover(function (){
@@ -101,6 +109,42 @@ $(document).ready(function(){
             });
         }, 4000);
     }else { console.log("stop") }
+
+    // WORK JSON
+    $.getJSON("work.json", function(work) {
+        let html = '';
+        $.each(work, function(i, piece) {
+            html += 
+                `<div class="grid-items">
+                    <div class="image-container">
+                        <img src= ${piece.image}>
+                            <div class="info-container">
+                                <h2>${piece.name}</h2>
+                                <p>${piece.caption}</p>
+                            </div>
+                    </div>
+                </div>`
+        });
+        $(".grid-container").append(html);
+    });
+
+    // // PASSION JSON
+    // $.getJSON("passion.json", function(passion) {
+    //     let html = '';
+    //     $.each(passion, function(i, piece) {
+    //         html += 
+    //             `<div class="grid-items">
+    //                 <div class="image-container">
+    //                     <img src= ${piece.image}>
+    //                         <div class="info-container">
+    //                             <h2>${piece.name}</h2>
+    //                             <p>${piece.caption}</p>
+    //                         </div>
+    //                 </div>
+    //             </div>`
+    //     });
+    //     $(".grid-container").append(html);
+    // });
 });   
 
 

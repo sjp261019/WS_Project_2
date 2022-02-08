@@ -1,0 +1,42 @@
+[
+    {
+        "name": "LUMINA",
+        "image": "img/workItem/lumina.jpg",
+        "caption": 2021
+    },
+    {
+        "name": "WAVES",
+        "image": "img/workItem/waves.jpg",
+        "caption": 2021
+    },
+    {
+        "name": "EXPLODED VIEW",
+        "image": "img/workItem/exploded.jpg",
+        "caption": 2021
+    },
+    {
+        "name": "SAMSUNG AR",
+        "image": "img/workItem/samsung.jpg",
+        "caption": 2020
+    },
+    {
+        "name": "\"MELON\" UI/UX REDESIGN",
+        "image": "img/workItem/melon.jpg",
+        "caption": 2020
+    },
+    {
+        "name": "IDSA MAKEATHON 2020",
+        "image": "img/workItem/idsa.jpg",
+        "caption": 2020
+    },
+    {
+        "name": "NEMO",
+        "image": "img/workItem/nemo.jpg",
+        "caption": 2018
+    },
+    {
+        "name": "CAPSA",
+        "image": "img/workItem/capsa.jpg",
+        "caption": 2018
+    }
+]

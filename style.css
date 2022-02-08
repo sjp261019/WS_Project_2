@@ -534,6 +534,57 @@ footer{
     width: 100%; height: auto;
 }
 
+/* ------------------------------ */
+/* WORK */
+/* ------------------------------ */
+#workPage{
+    height: auto;
+    margin-bottom: 0;
+    display: block;
+    padding: 100px;
+}
+
+.pageTitle{
+    /* border: 3px solid; */
+    margin-bottom: 5vh;
+}
+
+.grid-container {
+    width: 100%;
+    display:grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-auto-rows: 300px;
+    /* border: 3px solid; */
+    grid-gap: 40px;
+    justify-content: center;
+  }
+
+  .grid-items{
+    flex: 33.3% 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid;
+  }
+
+  .image-container {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .image-container > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .info-container{
+      width: 100%;
+      height: 100%;
+  }
+
 /* MOBILE */
 @media screen and (max-width: 768px) {
     h1{ font-size: 30px; }
