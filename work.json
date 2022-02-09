@@ -1,42 +1,60 @@
 [
     {
         "name": "LUMINA",
+        "item": "work/lumina.html",
         "image": "img/workItem/lumina.jpg",
         "caption": 2021
     },
     {
         "name": "WAVES",
+        "item": "work/waves.html",
         "image": "img/workItem/waves.jpg",
         "caption": 2021
     },
     {
         "name": "EXPLODED VIEW",
+        "item": "work/exploded.html",
         "image": "img/workItem/exploded.jpg",
         "caption": 2021
     },
+
+    {
+        "name": "WOOD I",
+        "item": "work/wood.html",
+        "image": "img/workItem/wood.jpg",
+        "caption": 2021
+    },
+
+    {
+        "name": "CONNECTION",
+        "item": "work/connection.html",
+        "image": "img/workItem/connection.jpg",
+        "caption": 2021
+    },
+
+    {
+        "name": "ID SKETCH",
+        "item": "work/sketch.html",
+        "image": "img/workItem/sketch.jpg",
+        "caption": 2021
+    },
+
     {
         "name": "SAMSUNG AR",
+        "item": "work/samsung.html",
         "image": "img/workItem/samsung.jpg",
         "caption": 2020
     },
     {
         "name": "\"MELON\" UI/UX REDESIGN",
+        "item": "work/melon.html",
         "image": "img/workItem/melon.jpg",
         "caption": 2020
     },
     {
         "name": "IDSA MAKEATHON 2020",
+        "item": "work/idsa.html",
         "image": "img/workItem/idsa.jpg",
         "caption": 2020
-    },
-    {
-        "name": "NEMO",
-        "image": "img/workItem/nemo.jpg",
-        "caption": 2018
-    },
-    {
-        "name": "CAPSA",
-        "image": "img/workItem/capsa.jpg",
-        "caption": 2018
     }
 ]

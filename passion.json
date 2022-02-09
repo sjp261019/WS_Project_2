@@ -1,21 +1,31 @@
 [
     {
-        "name": "\"CONDITION\" PROJECT",
-        "image": "img/passionItem/condition.jpg",
+        "name": "#OOTD",
+        "item": "passion/ootd.html",
+        "image": "img/passionItem/ootd.jpg",
+        "caption": 2020
+    },
+    {
+        "name": "DIGITAL DIMENTIA",
+        "item": "passion/digital.html",
+        "image": "img/passionItem/digital.jpg",
         "caption": 2019
     },
     {
         "name": "PLAIN SIGHT",
+        "item": "passion/plainsight.html",
         "image": "img/passionItem/plainsight.jpg",
         "caption": 2019
     },
     {
         "name": "CHARCOAL",
+        "item": "passion/charcoal.html",
         "image": "img/passionItem/charcoal.jpg",
         "caption": 2018
     },
     {
         "name": "SEARCH",
+        "item": "passion/search.html",
         "image": "img/passionItem/search.jpg",
         "caption": 2018
     }

@@ -48,21 +48,27 @@ $(document).ready(function(){
         }
     });
 
+    // CHANGE MAIN IMAGE SIZE ON SCROLL
+    $(window).scroll(function() {
+        if($(this).scrollTop()>0){
+            $(".mainImage").animate({"height":"60vh"}, "slow");
+        } else{
+            $(".mainImage").animate({"height":"calc(100vh - 100px)"}, "slow");
+        }
+    });
+
     //CLICK TO REVEAL MENU
     var clicks = 0;
     $("#menu").click(function(){
         clicks += 1;
         $(".openMenu").toggle("slow");
         if(clicks%2 == 1){
-            $(".sun").animate({opacity:0}, "slow");
-            $(".arrow").animate({opacity:0}, "slow");
-            $(".profile").animate({opacity:0}, "slow");
+            $(".sun, .arrow, .profile").animate({"opacity":"0"}, "slow");
         } else {
-            $(".sun").animate({opacity:100}, "slow");
-            $(".arrow").animate({opacity:100}, "slow");
-            $(".profile").animate({opacity:100}, "slow");
+            $(".sun, .arrow, .profile").animate({"opacity":"100"}, "slow");
         };
     });
+
 
     // ENLARGEN WORK CONTENT / SHOW TEXT ON HOVER
     $(".work1").children("#workItem1").hover(function (){
@@ -116,35 +122,35 @@ $(document).ready(function(){
         $.each(work, function(i, piece) {
             html += 
                 `<div class="grid-items">
+                    <a href= ${piece.item} class="info-container">
+                        <h5>${piece.name}</h5>
+                        <p>${piece.caption}</p>
+                    </a>
                     <div class="image-container">
                         <img src= ${piece.image}>
-                            <div class="info-container">
-                                <h2>${piece.name}</h2>
-                                <p>${piece.caption}</p>
-                            </div>
                     </div>
                 </div>`
         });
-        $(".grid-container").append(html);
+        $(".work-grid").append(html);
     });
 
-    // // PASSION JSON
-    // $.getJSON("passion.json", function(passion) {
-    //     let html = '';
-    //     $.each(passion, function(i, piece) {
-    //         html += 
-    //             `<div class="grid-items">
-    //                 <div class="image-container">
-    //                     <img src= ${piece.image}>
-    //                         <div class="info-container">
-    //                             <h2>${piece.name}</h2>
-    //                             <p>${piece.caption}</p>
-    //                         </div>
-    //                 </div>
-    //             </div>`
-    //     });
-    //     $(".grid-container").append(html);
-    // });
+    // PASSION JSON
+    $.getJSON("passion.json", function(passion) {
+        let html = '';
+        $.each(passion, function(i, piece) {
+            html += 
+                `<div class="grid-items">
+                    <a href= ${piece.item} class="info-container">
+                        <h5>${piece.name}</h5>
+                        <p>${piece.caption}</p>
+                    </a>
+                    <div class="image-container">
+                        <img src= ${piece.image}>
+                    </div>
+                </div>`
+        });
+        $(".passion-grid").append(html);
+    });
 });   
 
 
