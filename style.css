@@ -78,7 +78,7 @@ p { color: white;
     flex-grow: 1;
     flex-shrink: 1;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;  
     transition: flex-grow .7s;
 
@@ -87,8 +87,8 @@ p { color: white;
 .navItem:hover{ opacity: 50%; }
 
 #about{ justify-content: left; }
-
-#menu{ justify-content: right; text-align: right; float: right; }
+#sunjoo{ justify-content: center; }
+#menu{ justify-content: right; }
 
 /* INTRO */
 .intro{
@@ -564,6 +564,7 @@ footer{
     grid-template-rows: minmax(min-content, max-content);
     /* border: 3px solid; */
     grid-gap: 2%;
+    grid-row-gap: 4%;
     justify-content: center;
   }
   .grid-items{
@@ -718,6 +719,62 @@ footer{
 }
 
 .thanks{ text-align: center; }
+
+.contactBox{
+    width: 100vw;
+    flex-direction: column;
+    padding: 100px 5% 5% 5%;
+}
+
+.contactBox > h2{
+    margin-bottom: 2%;
+}
+
+form{
+    margin: auto;
+    width: 50%;
+    justify-content: center;
+}
+
+input{
+    width: 100%;
+    margin-bottom: 5%;
+    padding: 10px;
+}
+
+input[type=text], select, textarea{
+    width: 100%;
+    resize: vertical;
+    border: 3px solid;
+    padding: 10px;
+    margin-bottom: 5%;
+}
+
+input[type="submit"]{
+    margin: auto;
+    width: 12%;
+    text-align: center;
+    background-color: white;
+    color: black;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover{
+    background-color: black;
+    color: white;
+}
+
+.submit_btn{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+form >textarea{
+    height: 300px;
+    width:100%;
+}
 
 /* MOBILE */
 @media screen and (max-width: 768px) {

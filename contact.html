@@ -23,7 +23,7 @@
     <!-- NAV BAR -->
     <div class="container nav">
         <a href="about.html" class="navItem" id="about">ABOUT</a>
-        <a href="index.html" class="navItem">SUNJOO PARK</a>
+        <a href="index.html" class="navItem" id="sunjoo">SUNJOO PARK</a>
         <div class="navItem" id="menu">MENU</div>
     </div>
 
@@ -41,5 +41,18 @@
             <div class="icon"><img src="img/contact/behance.png"></div>
         </div>
     </div>
+
+    <div class="container contactBox">
+        <h2 class="pageTitle">CONTACT</h2>
+        <form action="contact.php">
+          <input type="text" id="fname" name="firstname" placeholder="NAME"></br>
+          <input type="text" id="fname" name="firstname" placeholder="EMAIL"></br>
+          <input type="text" id="fname" name="firstname" placeholder="SUBJECT"></br>
+          <textarea id="subject" name="subject" placeholder="MESSAGE"></textarea></br>
+          <div class="submit_btn">
+            <input type="submit" value="Submit">
+          </div>
+        </form>
+      </div>    
 </body>
 </html>
