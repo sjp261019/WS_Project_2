@@ -873,6 +873,10 @@ form >textarea{
         border: 2px solid;
     }
     input[type=submit]{border: 2px solid; width:70px;}
+    form{ width: 70%; }
+    .contactBox > h2{
+        margin-bottom: 4%;
+    }
 }
 
 
