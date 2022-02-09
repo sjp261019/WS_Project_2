@@ -73,7 +73,7 @@ p { color: white;
 
 .navItem{
     cursor: pointer;
-    width: 100%;
+    width: 30vw;
     height: 90%;
     /* flex-grow: 1;
     flex-shrink: 1; */
